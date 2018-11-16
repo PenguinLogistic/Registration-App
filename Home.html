@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<!-- MaxCDN is support for bootstrap and it's css. included jQuery as well. -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!-- this is the script for indexedDB -->
+		<script type="text/javascript">
+			 <!-- function for adding new students to the db -->
+			 function add() {
+				var emailv = document.getElementById("email").value;
+				alert(emailv)
+			 }
+
+		</script>
+	</head>
+	
+	<body>
+		<div class ="container">
+			<h1>Enrichment Learning Centre</h1>
+			<p>Registration Form</p>
+			
+			<!-- these forms are the little boxes you can enter info into -->
+			<form action="phpdemo.php" method="post" class="form-horizontal">
+			  <h>Forms with *'s are mandatory<p></p></h>
+			  <!-- this div is for the student name -->
+			  <div class="form-group row">
+				<label class="control-label col-md-1" for="fname">Given.Name:</label>
+				<div class="col-md-3">
+				  <input type="text" class="form-control" name="fname" id="fname" placeholder="Given Name*">
+				</div>
+				<label class="control-label col-md-1" for="mname">Mid.Name:</label>
+				<div class="col-md-3">
+				  <input type="text" class="form-control" name="mname" id="mname" placeholder="Middle Name*">
+				</div>
+				<label class="control-label col-md-1" for="sname">Surname:</label>
+				<div class="col-md-3">
+				  <input type="text" class="form-control" name="sname" id="sname" placeholder="Surname*">
+				</div>
+			  </div>
+			  
+			  <!-- this div is for the email -->
+			  <div class="form-group">
+				<label class="control-label col-md-1" for="email">Email:</label>
+				<div class="col-md-5">
+				  <input type="text" class="form-control" name="email" id="email" placeholder="Email*">
+				</div>
+			  </div>
+			  
+			  <!-- this is the submit button-->
+			  <input type = "submit" value="Register">
+			</form>
+		</div>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	</body>
+	
+</html> 
